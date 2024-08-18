@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TURBO FIBER</title>
+    <style>
+      p{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+      }
+      .logo{
+        color:#6609F6;
+        font-style: oblique;
+      }
+      .header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 75px;
+        color: black;
+        background-color: #99f609;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 5px;
+        position:fixed;
+        top:0px;
+        left:0;
+        right:0;
+      }
+      .left{
+        display:flex;
+        flex-direction:row;
+        min-width: 230px;
+      }
+      .middle{
+        display:flex;
+        flex:1;
+        justify-content: center;
+        max-width:600px;
+      }
+      .right{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        width:480px;
+        justify-content: left;
+        align-items: center;
+      }
+      .search{
+        height:50px;
+      }
+      .Home{
+        font-size: large;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-style: none;
+        background-color: #99f609;
+        padding:25px;
+      }
+      .Home:hover{
+        background-color: #79c409;
+        color:white;
+        border-style: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition:background-color 1s;
+      }
+      .Product{
+        font-size: large;
+        border-style: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #99f609;
+        padding:25px;
+      }
+      .Product:hover{
+        background-color: #79c409;
+        opacity:0.8;
+        color:white;
+        border-radius: 15px;
+        cursor: pointer;
+        transition:background-color 1s;
+      }
+      .Product:active{
+        opacity:0.5;
+        box-shadow: 5px 5px 10px rgb(50, 34, 34);
+      }
+      .Contact{
+        font-size: large;
+        border-style: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #99f609;
+        padding:25px;
+      }
+      .Contact:hover{
+        background-color: #79c409;
+        color:white;
+        border-style: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition:background-color 1s;
+      }
+      .Sign{
+        font-size: large;
+        border-style: none;
+        background-color: #99f609;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding:25px;
+      }
+      .Sign:hover{
+        background-color:#79c409 ;
+        border-style: none;
+        color:white;
+        border-radius: 15px;
+        cursor: pointer;
+        transition:background-color 1s;
+      }
+      .body{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .basic{
+        background-color:#e9edf0;
+        border-color: #e9edf0;
+        flex:1;
+        max-width: 400px;
+        border-radius: 10px;
+        margin-left:50px;
+        margin-right: 15px;
+      }
+      .basic:hover{
+        box-shadow: 5px 5px 10px rgb(50, 34, 34) ;
+      }
+      .Entertainment{
+        background-color:#e9edf0;
+        flex:1;
+        max-width: 400px;
+        border-radius:10px;
+        margin-left:15px;
+        margin-right:15px;
+      }
+      .Entertainment:hover{
+        box-shadow: 5px 5px 10px rgb(50, 34, 34) ;
+      }
+      .Unlimited_Entertainment{
+        background-color: #e9edf0;
+        border-color:#e9edf0;
+        flex:1;
+        max-width: 400px;
+        border-radius: 10px;
+        margin-left:15px;
+        margin-right:50px;
+      }
+      .Unlimited_Entertainment:hover{
+        box-shadow: 5px 5px 10px rgb(50, 34, 34) ;
+      }
+      .Lower{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .Popular{
+        width:700px;
+        background-color:#e9edf0;
+      }
+      .Popular:hover{
+        box-shadow: 5px 5px 10px rgb(50, 34, 34) ;
+      }
+      .footer{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+      }
+      .buy{
+        border-style: none;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .buy:hover{
+        cursor:pointer;
+        opacity: 0.8;
+      }
+      .buy:active{
+        box-shadow: 5px 5px 10px rgb(50, 34, 34) ;
+      }
+      .btt{
+        margin-bottom:18px;
+        padding:15px;
+        background-color: rgb(40, 184, 40);
+        color:white;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-style: none;
+        border-radius:8px;
+        font-size: large;
+        cursor:pointer;
+      }
+    </style>
+  </head>
+  <body style="height:1500px;">
+    <div class="header">
+      <div class="left">
+        <div><h1 class = "logo">TURBO FIBER</h1></div>
+      </div>
+      <div class="middle">
+        <input class="Search" type="text" placeholder="Enter a plan" style="height:40px;flex:1;font-size:large;border-style:solid;padding:2px;font-family:Georgia, 'Times New Roman', Times, serif;">
+        <button style="margin-left:0px;;border-style:solid;border-color:rgb(118, 118, 118)"><img src="search.svg" style="width:30px;"></button>
+      </div>
+      <div class="right">
+        <div>
+          <button class="Home">Home</button>
+        </div>
+        <div>
+          <button class="Contact">Contact</button>
+        </div>
+        <div>
+          <button class="Sign">Sign-Up</button>
+        </div>
+        <div>
+          <button class="Product">Connection</button>
+        </div>
+      </div>  
+    </div>
+    <p style="font-size:xx-large;text-align:center;padding-top:30px;font-weight:bold;color:red;margin-top:75px;text-decoration:underline;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">BROADBAND PLANS</p>
+    <div class="body">
+      <div class="basic">
+        <div><img src="istockphoto-1425235236-612x612.jpg" style="width:400px;border-radius:10px;"></div>
+        <div>
+          <p style="font-size:x-large;text-align:center;text-decoration:underline;color:rgb(28, 77, 201)"><img src="speed_broadband.webp" style="width:18px;color:rgb(28, 77, 201)">30Mbps</p>
+        </div>
+        <div><p style="text-align:center;color:purple;"><img src="Router_icon_broadbandPlan.webp" style="width:18px;">Free router*</p></div>
+        <div><p style="text-align:center;color:purple;"><img src="installation_icon_broadbandPlan.webp" style="width:18px;">Free installation</p></div>
+        <div><p style="text-align:center;color:purple;">800GB data/month</p></div>
+        <div><p style="text-align:center;color:purple;">Get acess to 5+ OTT's</p></div>
+        <div><p style="text-align:center;font-weight:bold;font-size:x-large;">Students Plan</p></div>
+        <div><p style="text-align:center;color:purple;">just 299/month*</p></div>
+        <div><button class="buy" style="display:block;margin:auto;font-size:medium;width:120px;background-color:rgb(28, 77, 201);color:white;border-radius:15px;padding:20px;margin-bottom:20px">Buy Now</button></div>
+      </div>
+      <div class="Entertainment">
+        <div><img src="img_122803_media_and_entertainment.jpg" style="width:400px;border-radius:10px;"></div>
+        <div><p style="text-align:center;font-size:x-large;text-decoration:underline;color:rgb(28, 77, 201)"><img src="speed_broadband.webp" style="width:18px;color:rgb(28, 77, 201)">100Mbps</p></div>
+        <div><p style="text-align:center;color:purple;"><img src="Router_icon_broadbandPlan.webp" style="width:18px;">Free router*</p></div>
+        <div><p style="text-align:center;color:purple;"><img src="installation_icon_broadbandPlan.webp" style="width:18px;">Free installation</p></div>
+        <div><p style="text-align:center;color:purple;">1800GB data/month</p></div>
+        <div><p style="text-align:center;color:purple;">Get acess to 20+ OTT's</p></div>
+        <div><p style="text-align:center;font-weight:bold;font-size:x-large;">Entertainment Plan</p></div>
+        <div><p style="text-align:center;color:purple;">just 499/month*</p></div>
+        <div><button class="buy" style="display:block;margin:auto;font-size:medium;width:120px;background-color:rgb(28, 77, 201);color:white;border-radius:15px;padding:20px;margin-bottom:20px">Buy Now</button></div>
+      </div>
+      <div class="Unlimited_Entertainment">
+        <div><img src="featured.jpg" style="width:400px;height:266.66px;border-radius:10px;"></div>
+        <div><p style="text-align:center;font-size:x-large;text-decoration:underline;color:rgb(28, 77, 201)"><img src="speed_broadband.webp" style="width:18px;">500Mbps</p></div>
+        <div><p style="text-align:center;color:purple;"><img src="Router_icon_broadbandPlan.webp" style="width:18px;">Free router*</p></div>
+        <div><p style="text-align:center;color:purple;"><img src="installation_icon_broadbandPlan.webp" style="width:18px;">Free installation</p></div>
+        <div><p style="text-align:center;color:purple;">Unlimited data/month</p></div>
+        <div><p style="text-align:center;color:purple;">Get acess to 100+ OTT's</p></div>
+        <div><p style="text-align:center;font-weight:bold;font-size:x-large;">Entertainment++Plan</p></div>
+        <div><p style="text-align:center;color:purple;">just 899/month*</p></div>
+        <div><button class="buy" style="display:block;margin:auto;font-size:medium;width:120px;background-color:rgb(28, 77, 201);color:white;border-radius:15px;padding:20px;margin-bottom:20px">Buy Now</button></div>
+      </div>
+    </div>
+    <p style="font-size:xx-large;text-align:center;padding-top:30px;font-weight:bold;color:red;text-decoration:underline;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">POPULAR PLANS</p>
+    <div class="Lower">
+      <div class="Popular" style="border-radius:10px;">
+        <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between;">
+          <div style="margin-left:10px;"><p style="text-align:center;font-size:x-large;text-decoration:underline;color:purple;"><img src="speed_broadband.webp" style="width:18px;">500Mbps</p></div>
+          <div><p style="text-align:center;color:purple;"><img src="Router_icon_broadbandPlan.webp" style="width:18px;">Free router*</p></div>
+          <div style="margin-right:10px;"><p style="text-align:center;color:purple;"><img src="installation_icon_broadbandPlan.webp" style="width:18px;">Free installation</p></div>
+        </div>
+        <div style="display:flex;flex-direction:row;justify-content:space-between">
+          <div style="margin-left:10px;display:flex;flex-direction:column;width:300px;">
+            <div><p style="color:purple;">Unlimited data/month</p></div>
+            <div><p style="font-weight:bold;font-size:x-large;margin-top:5px;margin-bottom:5px;">Entertainment++Plan</p></div>
+            <div><p style="color:purple;">just 1199/month*</p></div>
+            <div><button class="buy" style="font-size:medium;width:120px;background-color:rgb(28, 77, 201);color:white;border-radius:15px;padding:20px;margin-bottom:20px">Buy Now</button></div>
+          </div>
+          <div style="width:300px;">
+            <div style="margin-bottom:20px;margin-left:10px;color:purple;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">OTT Apps Included</div>
+            <div style="display:flex;flex-direction:row;justify-content:space-between;margin-top:10px;margin-right:10px;">
+              <div><img src="sony-liv-1.webp"></div>
+              <div><img src="sunnxt-1.webp"></div>
+              <div><img src="zee5-1.webp"></div>
+              <div><img src="disney-sm-1.webp"></div>
+            </div>
+            <div style="display:flex;">
+              <div><img src="live-tv-plus-0.webp" style="width:58px;margin-top:10px;"></div>
+              <div><img src="yupptv-1.webp" style="margin-top:10px;margin-left:20px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" style="margin-top:30px;margin-left:100px;margin-right:100px;">
+      <div style="width:200px;display:flex;flex-direction:row;">
+        <div><p style="flex:1;margin-top:35px;color:purple;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">TURBO FIBER</p></div>
+      </div>
+      <div style="display:flex;align-items:center;">
+        <div style="margin-right:8px;color:purple;"><p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Get the app</p></div>
+        <div><img src="share_google_play_logo.png" style="width:75px;"></div>
+      </div>
+      <div style="display:flex;align-items:center;">
+        <div style="margin-right:8px;color:purple;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><p>Follow us on</p></div>
+        <div><img src="360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb.jpg" style="width:150px;"></div>
+        <div><img src="images.png" style="width:40px;margin-left:3px;"></div>
+      </div>
+      <div><button class="btt" style="margin-top:20px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Back to Top</button></div>
+    </div>
+    <p style="margin-left:100px;margin-top:0px;margin-bottom:0px;color:purple;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">2024 Turbo India . All Rights Reserved.</p>
+    <p style="margin-left:100px;margin-top:0px;margin-bottom:0px;color:purple;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Location : Tamil Nadu.</p>
+  </body>
+  <script>
+    const x = document.querySelector('.btt');
+    x.addEventListener('click',() => {
+      window.scrollTo({
+        top : 0,
+        behavior: "smooth"
+      })
+    })
+  </script>
+</html>
